@@ -101,6 +101,31 @@
     text-align: center;
   }
 
+  .header .menu-ham{
+    display: none;
+  }
+
+  .header .menu-ham:checked ~ .menu{
+    max-height: 240px;
+  }
+
+  .header .menu-ham:checked ~ .menu-icon .navicon{
+    background: transparent;
+  }
+
+  .header .menu-ham:checked ~ .menu-ham .navicon::before{
+    transform: rotate(-45deg);
+  }
+
+    .header .menu-ham:checked ~ .menu-ham .navicon::after{
+    transform: rotate(45deg);
+  }
+
+  .header .menu-ham:checked ~ .menu-icon:not(.steps) .navicon::before,
+  .header .menu-ham:checked ~ .menu-icon:not(.steps) .navicon::after{
+    top: 0;
+  }
+
   .more-content {
     display: block;
     font: 12px;
