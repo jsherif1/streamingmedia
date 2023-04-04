@@ -5,7 +5,6 @@
     margin: 0 auto;
   }
 
-
   html {
     background-color: #020659;
     margin: 0 auto;
@@ -17,6 +16,10 @@
     padding-bottom: 10px;
     padding-left: 20px;
     background-image: linear-gradient(to right, #020659, #2104D9);
+  }
+
+  ul .menu{
+    width: 50%;
   }
 
   nav {
@@ -75,46 +78,6 @@
     left: 5px;
   }
 
-  /* header */
-
-.header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
@@ -126,7 +89,6 @@
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -159,6 +121,7 @@
 .header .menu-icon .navicon:after {
   top: -5px;
 }
+
 
   #trending-songs {
     background-color: #ffffff;
@@ -262,6 +225,8 @@
     background: #ffffff;
   }
 
+  
+
 }
 
 @media screen and (min-width: 834px) {
@@ -279,7 +244,7 @@
     position: absolute;
     top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 150px 150px 150px 150px 1fr;
     align-items: center;
 
   }
@@ -334,6 +299,19 @@
   .more-content {
     float: right;
     margin-right: 10px;
+  }
+
+  .header li {
+    float: left;
+  }
+  
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
   }
 
 }
